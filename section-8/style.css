@@ -1,4 +1,55 @@
-.col {
-  background-color: grey;
-  border: 2px solid black;
+header {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.button {
+  color: #FFF;
+  text-decoration: none;
+  font-family: sans-serif;
+  background-color: #21ba45;
+  padding: .5em 1em;
+  font-size: 1.5rem;
+  border-radius: .25rem;
+  border: 1px solid #21ba45;
+}
+
+.button:hover {
+  background-color: #16ab39;
+  border: 1px solid #16ab39;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  color: #FFF;
+  font-size: 5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  .header-content {
+    text-align: left;
+    padding: 1rem;
+    width: 40%;
+  }
 }
